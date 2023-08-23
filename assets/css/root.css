@@ -22,6 +22,7 @@
   --text-grey: #939597;
   --bg-color: #faf8ed;
   --text-white: #ffffff;
+  --text-blue: #2e476b;
 
   /* font-weight */
   --fw-400: 400;
@@ -84,6 +85,9 @@
 }
 .bg_white {
   background-color: var(--bg-color);
+}
+.text_blue {
+  color: var(--text-blue);
 }
 
 /* font-weight */
