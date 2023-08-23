@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Sen:wght@400;500;600;700;800&display=swap");
+:root {
+  /* font-size */
+  --fs-sm: 12px;
+  --fs-md: 14px;
+  --fs-lg: 16px;
+  --fs-xl: 18px;
+  --fs-xxl: 20px;
+  --fs-3xl: 21px;
+  --fs-4xl: 24px;
+  --fs-5xl: 26px;
+  --fs-6xl: 30px;
+  --fs-7xl: 40px;
+  --fs-8xl: 46px;
+  --fs-9xl: 56px;
+  --fs-10xl: 84px;
+
+  /* color; */
+  --text-orange: #f66f4d;
+  --text-grey: #939597;
+  --bg-color: #faf8ed;
+  --text-white: #ffffff;
+
+  /* font-weight */
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+}
+
+/* font-size */
+.fs_12 {
+  font-size: var(--fs-sm);
+}
+.fs_14 {
+  font-size: var(--fs-md);
+}
+.fs_16 {
+  font-size: var(--fs-lg);
+}
+.fs_18 {
+  font-size: var(--fs-xl);
+}
+.fs_20 {
+  font-size: var(--fs-xxl);
+}
+.fs_21 {
+  font-size: var(--fs-3xl);
+}
+.fs_24 {
+  font-size: var(--fs-4xl);
+}
+.fs_26 {
+  font-size: var(--fs-5xl);
+}
+.fs_30 {
+  font-size: var(--fs-6xl);
+}
+.fs_40 {
+  font-size: var(--fs-7xl);
+}
+.fs_46 {
+  font-size: var(--fs-8xl);
+}
+.fs_56 {
+  font-size: var(--fs-9xl);
+}
+.fs_84 {
+  font-size: var(--fs-10xl);
+}
+
+/* color */
+.text_orange {
+  color: var(--text-orange);
+}
+.text_grey {
+  color: var(--text-grey);
+}
+.text_white {
+  color: var(--text-white);
+}
+.bg_white {
+  background-color: var(--bg-color);
+}
+
+/* font-weight */
+.fw_400 {
+  font-weight: 400;
+}
+.fw_500 {
+  font-weight: 500;
+}
+.fw_600 {
+  font-weight: 600;
+}
+.fw_700 {
+  font-weight: 700;
+}
+.fw_800 {
+  font-weight: 800;
+}
+
+/* font-family */
+.ff-poppins {
+  font-family: "poppins", sans-serif;
+}
+.ff-Inter {
+  font-family: "inter", sans-serif;
+}
+.ff-Sen {
+  font-family: "sen", sans-serif;
+}
