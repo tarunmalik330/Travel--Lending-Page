@@ -18,6 +18,7 @@
   --fs-10xl: 84px;
   --fs-11xl: 19px;
   --fs-12xl: 28px;
+  --fs-13xl: 22px;
 
   /* color; */
   --text-orange: #f66f4d;
@@ -81,7 +82,9 @@
 .fs_28 {
   font-size: var(--fs-12xl);
 }
-
+.fs_22 {
+  font-size: var(--fs-13xl);
+}
 /* color */
 .text_orange {
   color: var(--text-orange);
@@ -148,6 +151,7 @@
     --fs-10xl: 63px !important;
     --fs-11xl: 19px;
     --fs-12xl: 20px !important;
+    --fs-13xl: 22px;
   }
 }
 @media (max-width: 1200px) {
@@ -168,5 +172,6 @@
     --fs-10xl: 84px;
     --fs-11xl: 19px;
     --fs-12xl: 28px;
+    --fs-13xl: 22px;
   }
 }

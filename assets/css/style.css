@@ -304,6 +304,49 @@
 .pb_80 {
   padding-bottom: 80px;
 }
+.nav-line::after {
+    content: "";
+    position: absolute;
+    width:0;
+    left: 0;
+    height:2px;
+    background-color: hsl(12, 90%, 63%);
+    bottom: 0;
+}
+.nav-line:hover::after {
+    width: 12px;
+    transition: all 300ms linear;
+}
+.myslider .slick-list {
+  overflow: visible;
+  padding: 0 50px 0 0;
+  position: relative;
+  z-index: -1;
+}
+.myslider .slick-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4000px;
+  right: 100%;
+  background-color: #faf8ed;
+}
+.slick-slider {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  z-index: 1;
+}
+
+.slick-slider .slick-list {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  transform: none !important;
+}
 
 .animation {
   animation: swing 2s linear infinite;
@@ -319,10 +362,10 @@
     transform: scale(1);
   }
 }
-.duration_300{
+.duration_300 {
   transition: 300ms linear;
 }
-.pointer_event_none{
+.pointer_event_none {
   pointer-events: none;
 }
 @media (max-width: 992px) {
