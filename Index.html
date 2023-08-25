@@ -40,7 +40,22 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="overflow-hidden">
+    <div>
+        <div id="preloader"
+            class="min-vh-100 w-100 bg-black position-fixed start-0 top-0 d-flex align-items-center justify-content-center z-1 duration_300">
+            <svg class="animation" width="42" height="35" viewBox="0 0 42 35" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M28.1572 0C29.2814 0 30.1929 0.922835 30.1929 2.06121V8.57029H36.7236C36.6938 12.6505 36.7047 17.9222 36.7147 22.7125C36.7189 24.7452 36.723 26.6914 36.7236 28.423C38.7825 29.6357 40.6822 31.2675 42 33.8299L41.0341 33.0961C38.7889 31.3908 35.1337 29.923 31.8145 29.3936C29.8939 29.0874 26.1886 29.3825 24.227 29.998L23.7966 30.133L24.3857 30.4795C25.2189 30.9696 25.9985 31.7461 26.2306 32.3172C26.4505 32.8582 26.5103 32.8725 27.7472 32.6793C29.1857 32.4548 33.9731 32.563 33.4062 32.8071C33.2934 32.8557 32.6616 32.9333 32.002 32.9796C29.8292 33.1321 27.0674 33.6453 25.4811 34.1914C25.3102 34.2502 25.1737 34.0837 24.9178 33.5043C24.1169 31.6912 22.2598 30.1182 20.1391 29.4571L19.561 29.2768L20.2355 29.3457C20.9479 29.4183 22.368 29.6842 22.8384 29.8328C23.0786 29.9088 23.1026 29.8801 23.0083 29.629C22.4981 28.2695 21.0224 26.714 19.4437 25.8716C18.0327 25.1187 16.7953 24.8538 15.0185 24.9246C13.6444 24.9793 11.9914 25.3011 11.9914 25.514C11.9914 25.5666 12.089 25.9553 12.2081 26.3778C12.591 27.7344 12.7668 29.1762 12.6133 29.7019C12.527 29.9976 12.4652 30.0803 12.4561 29.9126C12.4271 29.3816 11.6795 27.8683 10.9765 26.918C8.92324 24.1424 5.66458 22.7038 1.43027 22.7038H0C0.00256729 18.8605 0.00595093 12.4136 0.00359726 8.57029H6.35003V2.06121C6.35003 0.922835 7.26145 0 8.38575 0H28.1572ZM9.13575 8.57029V2.8206H27.4072V8.57029H9.13575ZM17.9469 12.6674C17.6392 12.8372 17.3875 13.0303 17.3875 13.0967C17.3875 13.163 17.8291 13.5924 18.3689 14.0508C19.7437 15.2187 21.4592 16.9793 21.4051 17.1671C21.3801 17.2537 20.5901 17.7731 19.6497 18.3215L17.9397 19.3185L16.4655 19.166C15.0981 19.0245 14.9693 19.0295 14.6905 19.2344C14.2459 19.5611 14.3123 19.7087 15.1318 20.2161C15.7813 20.6184 15.8795 20.7376 15.9187 21.1725C15.9581 21.6098 16.0117 21.6738 16.3653 21.707C16.715 21.7398 16.7876 21.8231 16.9273 22.3519C17.0155 22.6859 17.0877 23.0677 17.0877 23.2005C17.0877 23.5202 17.4439 23.6167 17.9703 23.4396C18.3323 23.3179 18.464 23.1338 18.8295 22.2391L19.2612 21.1825L21.2098 20.3661C22.2815 19.917 23.1999 19.5473 23.2507 19.5445C23.4127 19.5355 24.2953 21.2518 24.9692 22.8863C25.3667 23.8504 25.707 24.4833 25.8403 24.5061C25.9603 24.5268 26.3361 24.4287 26.6753 24.2883L27.2918 24.0328L27.1905 23.1251C27.0923 22.245 27.1011 22.2099 27.4846 21.965C28.0005 21.6356 27.9833 21.4483 27.4036 21.08L26.9273 20.7773L27.4036 20.4517C28.0128 20.0356 28.0036 19.8501 27.3572 19.5101C26.8628 19.2501 26.8343 19.198 26.8325 18.5515L26.8307 17.8679L28.5704 17.0342C30.4223 16.1467 31.3121 15.471 31.8067 14.5766C31.965 14.2902 32.0528 13.9492 32.0017 13.8186C31.8673 13.4746 30.949 13.3047 30.0077 13.4496C28.9345 13.6149 28.3767 13.8248 26.7793 14.6651C26.0093 15.07 25.3039 15.4014 25.2118 15.4014C25.1197 15.4014 24.7447 15.2545 24.3784 15.0749C23.8314 14.8066 23.6966 14.6677 23.6236 14.2971C23.5232 13.787 23.2563 13.6502 22.6976 13.8226C22.1352 13.9963 22.0342 13.9715 22.0342 13.6599C22.0342 13.5054 21.9442 13.2791 21.8344 13.157C21.658 12.9611 21.5698 12.9523 21.0843 13.0824C20.5666 13.2212 20.4838 13.2045 19.6729 12.7975C19.1991 12.5598 18.7428 12.3639 18.6589 12.3621C18.575 12.3602 18.2546 12.4976 17.9469 12.6674Z"
+                    fill="#ffffff" />
+                <path
+                    d="M8.63321 30.4902C12.1233 30.8062 14.5754 32.1608 15.6375 34.3596C16.0338 35.1801 15.946 35.1991 15.0267 34.4915C12.7227 32.7183 10.1239 31.6072 6.52032 30.8549C3.36597 30.1965 7.70444 30.4061 8.63321 30.4902Z"
+                    fill="#ffffff" />
+            </svg>
+        </div>
+    </div>
+
     <!-- navbar -->
     <section class="bg_white">
         <div class="container">
@@ -48,7 +63,8 @@
                 <div class="d-flex justify-content-between">
                     <div class="d-flex align-items-center">
                         <span class="me-1">
-                            <svg width="42" height="35" viewBox="0 0 42 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="42" height="35" viewBox="0 0 42 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M28.1572 0C29.2814 0 30.1929 0.922835 30.1929 2.06121V8.57029H36.7236C36.6938 12.6505 36.7047 17.9222 36.7147 22.7125C36.7189 24.7452 36.723 26.6914 36.7236 28.423C38.7825 29.6357 40.6822 31.2675 42 33.8299L41.0341 33.0961C38.7889 31.3908 35.1337 29.923 31.8145 29.3936C29.8939 29.0874 26.1886 29.3825 24.227 29.998L23.7966 30.133L24.3857 30.4795C25.2189 30.9696 25.9985 31.7461 26.2306 32.3172C26.4505 32.8582 26.5103 32.8725 27.7472 32.6793C29.1857 32.4548 33.9731 32.563 33.4062 32.8071C33.2934 32.8557 32.6616 32.9333 32.002 32.9796C29.8292 33.1321 27.0674 33.6453 25.4811 34.1914C25.3102 34.2502 25.1737 34.0837 24.9178 33.5043C24.1169 31.6912 22.2598 30.1182 20.1391 29.4571L19.561 29.2768L20.2355 29.3457C20.9479 29.4183 22.368 29.6842 22.8384 29.8328C23.0786 29.9088 23.1026 29.8801 23.0083 29.629C22.4981 28.2695 21.0224 26.714 19.4437 25.8716C18.0327 25.1187 16.7953 24.8538 15.0185 24.9246C13.6444 24.9793 11.9914 25.3011 11.9914 25.514C11.9914 25.5666 12.089 25.9553 12.2081 26.3778C12.591 27.7344 12.7668 29.1762 12.6133 29.7019C12.527 29.9976 12.4652 30.0803 12.4561 29.9126C12.4271 29.3816 11.6795 27.8683 10.9765 26.918C8.92324 24.1424 5.66458 22.7038 1.43027 22.7038H0C0.00256729 18.8605 0.00595093 12.4136 0.00359726 8.57029H6.35003V2.06121C6.35003 0.922835 7.26145 0 8.38575 0H28.1572ZM9.13575 8.57029V2.8206H27.4072V8.57029H9.13575ZM17.9469 12.6674C17.6392 12.8372 17.3875 13.0303 17.3875 13.0967C17.3875 13.163 17.8291 13.5924 18.3689 14.0508C19.7437 15.2187 21.4592 16.9793 21.4051 17.1671C21.3801 17.2537 20.5901 17.7731 19.6497 18.3215L17.9397 19.3185L16.4655 19.166C15.0981 19.0245 14.9693 19.0295 14.6905 19.2344C14.2459 19.5611 14.3123 19.7087 15.1318 20.2161C15.7813 20.6184 15.8795 20.7376 15.9187 21.1725C15.9581 21.6098 16.0117 21.6738 16.3653 21.707C16.715 21.7398 16.7876 21.8231 16.9273 22.3519C17.0155 22.6859 17.0877 23.0677 17.0877 23.2005C17.0877 23.5202 17.4439 23.6167 17.9703 23.4396C18.3323 23.3179 18.464 23.1338 18.8295 22.2391L19.2612 21.1825L21.2098 20.3661C22.2815 19.917 23.1999 19.5473 23.2507 19.5445C23.4127 19.5355 24.2953 21.2518 24.9692 22.8863C25.3667 23.8504 25.707 24.4833 25.8403 24.5061C25.9603 24.5268 26.3361 24.4287 26.6753 24.2883L27.2918 24.0328L27.1905 23.1251C27.0923 22.245 27.1011 22.2099 27.4846 21.965C28.0005 21.6356 27.9833 21.4483 27.4036 21.08L26.9273 20.7773L27.4036 20.4517C28.0128 20.0356 28.0036 19.8501 27.3572 19.5101C26.8628 19.2501 26.8343 19.198 26.8325 18.5515L26.8307 17.8679L28.5704 17.0342C30.4223 16.1467 31.3121 15.471 31.8067 14.5766C31.965 14.2902 32.0528 13.9492 32.0017 13.8186C31.8673 13.4746 30.949 13.3047 30.0077 13.4496C28.9345 13.6149 28.3767 13.8248 26.7793 14.6651C26.0093 15.07 25.3039 15.4014 25.2118 15.4014C25.1197 15.4014 24.7447 15.2545 24.3784 15.0749C23.8314 14.8066 23.6966 14.6677 23.6236 14.2971C23.5232 13.787 23.2563 13.6502 22.6976 13.8226C22.1352 13.9963 22.0342 13.9715 22.0342 13.6599C22.0342 13.5054 21.9442 13.2791 21.8344 13.157C21.658 12.9611 21.5698 12.9523 21.0843 13.0824C20.5666 13.2212 20.4838 13.2045 19.6729 12.7975C19.1991 12.5598 18.7428 12.3639 18.6589 12.3621C18.575 12.3602 18.2546 12.4976 17.9469 12.6674Z"
                                     fill="#2D3134" />
@@ -98,7 +114,8 @@
                         data-bs-target="#exampleModal">
                         <a href="" class="text_orange ff-poppins fs_16 fw_500 letter_spacing_1">Book Now</a>
                         <span class="ms-1">
-                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M0 8.45744L4.04598 10.2128L13.4253 2.87235L6.06897 11.1702V15L8.82758 11.9681L13.4253 13.5638L16 0L0 8.45744Z"
                                     fill="#F66F4D" />
@@ -124,7 +141,7 @@
                         <div class="line1 my-2"></div>
                         <div class="line2"></div>
                     </div>
-    
+
             </nav>
         </div>
     </section>
@@ -157,7 +174,7 @@
                                                         d="M9 4.55C9 3.95249 8.8836 3.36082 8.65746 2.80879C8.43131 2.25676 8.09984 1.75517 7.68198 1.33266C7.26412 0.910158 6.76804 0.575007 6.22208 0.346348C5.67611 0.117689 5.09095 0 4.5 0C3.90905 0 3.32389 0.117689 2.77792 0.346348C2.23196 0.575007 1.73588 0.910158 1.31802 1.33266C0.900156 1.75517 0.568688 2.25676 0.342542 2.80879C0.116396 3.36082 -8.80582e-09 3.95249 0 4.55C0 5.45155 0.263571 6.29005 0.710357 6.99725H0.705214C2.22236 9.399 4.5 13 4.5 13L8.29479 6.99725H8.29029C8.75341 6.26689 8.99971 5.41758 9 4.55ZM4.5 6.5C3.98851 6.5 3.49797 6.29455 3.13629 5.92886C2.77462 5.56316 2.57143 5.06717 2.57143 4.55C2.57143 4.03283 2.77462 3.53684 3.13629 3.17114C3.49797 2.80545 3.98851 2.6 4.5 2.6C5.01149 2.6 5.50203 2.80545 5.86371 3.17114C6.22538 3.53684 6.42857 4.03283 6.42857 4.55C6.42857 5.06717 6.22538 5.56316 5.86371 5.92886C5.50203 6.29455 5.01149 6.5 4.5 6.5Z"
                                                         fill="#F66F4D" />
                                                 </svg>
-    
+
                                             </span>
                                         </div>
                                     </div>
@@ -196,26 +213,23 @@
                                             <path d="M32.1592 32.1609L37.4503 37.452" stroke="white" stroke-width="2"
                                                 stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
-    
+
                                     </span>
                                 </div>
                             </div>
-    
+
                         </div>
-    
-    
-    
                     </div>
                     <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center mb-5"
                         data-aos="flip-right">
-                        <img src="./assets/images/png/hero-section-img.png" alt="hero-sec-img" class="w-100">
+                        <img src="./assets/images/web.p/hero-section-img.webp" alt="hero-section-img" class="w-100">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Categories -->
-    <section class="bg_white pb-5 pb-3">
+    <section id="Tours" class="bg_white pb-5 pb-3">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-12 col-md-6">
@@ -259,7 +273,7 @@
                             <p class="ff-Inter fs_20 fw_400 mb-0 text-white">Visite</p>
                         </div>
                     </div>
-                    <p class="fs_26 fw_500 ff-Inter text-center">Beach</p>
+                    <p class="fs_26 fw_500 ff-Inter text-center pt-3">Beach</p>
                 </div>
                 <div class="d-flex align-items-center justify-content-center flex-column">
                     <div class="position-relative image_overlay">
@@ -270,7 +284,7 @@
                         </div>
                     </div>
 
-                    <p class="fs_26 fw_500 ff-Inter text-center">Desert</p>
+                    <p class="fs_26 fw_500 ff-Inter text-center pt-3">Desert</p>
                 </div>
                 <div class="d-flex align-items-center justify-content-center flex-column">
                     <div class="position-relative image_overlay">
@@ -280,7 +294,7 @@
                             <p class="ff-Inter fs_20 fw_400 mb-0 text-white">Visite</p>
                         </div>
                     </div>
-                    <p class="fs_26 fw_500 ff-Inter text-center">Mountain</p>
+                    <p class="fs_26 fw_500 ff-Inter text-center pt-3">Mountain</p>
                 </div>
                 <div class="d-flex align-items-center justify-content-center flex-column">
                     <div class="position-relative image_overlay">
@@ -290,7 +304,7 @@
                             <p class="ff-Inter fs_20 fw_400 mb-0 text-white">Visite</p>
                         </div>
                     </div>
-                    <p class="fs_26 fw_500 ff-Inter text-center">Temple</p>
+                    <p class="fs_26 fw_500 ff-Inter text-center pt-3">Temple</p>
                 </div>
                 <div class="d-flex align-items-center justify-content-center flex-column">
                     <div class="position-relative image_overlay">
@@ -300,7 +314,7 @@
                             <p class="ff-Inter fs_20 fw_400 mb-0 text-white">Visite</p>
                         </div>
                     </div>
-                    <p class="fs_26 fw_500 ff-Inter text-center">Tower</p>
+                    <p class="fs_26 fw_500 ff-Inter text-center pt-3">Tower</p>
                 </div>
                 <div class="d-flex align-items-center justify-content-center flex-column">
                     <div class="position-relative image_overlay">
@@ -310,7 +324,7 @@
                             <p class="ff-Inter fs_20 fw_400 mb-0 text-white">Visite</p>
                         </div>
                     </div>
-                    <p class="fs_26 fw_500 ff-Inter text-center">Pyramid</p>
+                    <p class="fs_26 fw_500 ff-Inter text-center pt-3">Pyramid</p>
                 </div>
                 <div class="d-flex align-items-center justify-content-center flex-column">
                     <div class="position-relative image_overlay">
@@ -320,7 +334,7 @@
                             <p class="ff-Inter fs_20 fw_400 mb-0 text-white">Visite</p>
                         </div>
                     </div>
-                    <p class="fs_26 fw_500 ff-Inter text-center">Mountain</p>
+                    <p class="fs_26 fw_500 ff-Inter text-center pt-3">Mountain</p>
                 </div>
             </div>
         </div>
@@ -380,7 +394,8 @@
                             Experience</p>
                         <h2 class="fw_600 fs_56 ff-Inter text-black pb-3" data-aos="fade-right">Our Stories Have
                             Adventures</h2>
-                        <p class=" fw_400 fs_16 ff-Inter text-black opacity-75 pb-5 m-0">We are experienced in bringing
+                        <p class=" fw_400 fs_16 ff-Inter text-black opacity-75 pb-5 m-0">We are experienced in
+                            bringing
                             adventures to stay their journey, with all outdoor
                             destinations in the world as our
                             specialties. Start your adventure now! Nature has already called you!</p>
@@ -411,10 +426,10 @@
     <section id="Destinations" class="bg_white">
         <div class="container pb-5 pt-4 pt-5">
             <div class=" row align-items-center justify-content-center">
-                <div class="col-lg-6 col-12 pb-sm-4 pb-lg-0">
+                <div class="col-lg-6 col-12 pb-sm-4 pb-lg-0 mb-4">
                     <h4 class="ff-Inter fw_600 fs_56 text-black max-width_400">Find Popular Destination</h4>
                 </div>
-                <div class="col-lg-6 col-12 d-flex justify-content-md-end pb-5 pb-md-0" data-aos="zoom-in-up">
+                <div class="col-lg-6 col-12 d-flex justify-content-md-end pb-5 pb-md-0 mb-4" data-aos="zoom-in-up">
                     <button href="" class="first circle_btn me-2">
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -440,7 +455,8 @@
             </div>
             <div class="myslider">
                 <div class="slider_box me-3 pb-4" data-aos="zoom-in-up">
-                    <img src="./assets/images/png/mountain-hiking-tour.png" alt="mountain-hiking-tour" class="w-100 ">
+                    <img src="./assets/images/web.p/mountain-hiking-tour.webp" alt="mountain-hiking-tour"
+                        class="w-100 ">
                     <h2 class="ff-Inter fw_600 fs_24 text-black text-capitalize ps-2 mt-3">Mountain Hiking Tour</h2>
                     <p class="ff-Inter fs_14 fw_400 text_grey ps-2">Mountain Hiking Tour</p>
                     <div class="d-flex align-items-center justify-content-between">
@@ -450,7 +466,7 @@
                     </div>
                 </div>
                 <div class="slider_box me-3 pb-4" data-aos="zoom-in-up">
-                    <img src="./assets/images/png/machu-picchu-img.png" alt="machu-picchu-img" class="w-100">
+                    <img src="./assets/images/web.p/machu-picchu-img.webp" alt="machu-picchu-img" class="w-100">
                     <h2 class="ff-Inter fw_600 fs_24 text-black text-capitalize ps-2 mt-3">Machu Picchu, Peru</h2>
                     <p class="ff-Inter fs_14 fw_400 text_grey ps-2">Machu Picchu, Peru</p>
                     <div class="d-flex align-items-center justify-content-between">
@@ -460,7 +476,7 @@
                     </div>
                 </div>
                 <div class="slider_box me-3 pb-4" data-aos="zoom-in-up">
-                    <img src="./assets/images/png/grand-canyon.png" alt="grand-canyon" class="w-100">
+                    <img src="./assets/images/web.p/grand-canyon.webp" alt="grand-canyon" class="w-100">
                     <h2 class="ff-Inter fw_600 fs_24 text-black text-capitalize ps-2 mt-3">The Grand Canyon, Arizona
                     </h2>
                     <p class="ff-Inter fs_14 fw_400 text_grey ps-2">Mountain Hiking Tour</p>
@@ -471,7 +487,8 @@
                     </div>
                 </div>
                 <div class="slider_box me-3 pb-4" data-aos="zoom-in-up">
-                    <img src="./assets/images/png/mountain-hiking-tour.png" alt="mountain-hiking-tour" class="w-100 ">
+                    <img src="./assets/images/web.p/mountain-hiking-tour.webp" alt="mountain-hiking-tour"
+                        class="w-100 ">
                     <h2 class="ff-Inter fw_600 fs_24 text-black text-capitalize ps-2 mt-3">Mountain Hiking Tour</h2>
                     <p class="ff-Inter fs_14 fw_400 text_grey ps-2">Mountain Hiking Tour</p>
                     <div class="d-flex align-items-center justify-content-between">
@@ -481,7 +498,7 @@
                     </div>
                 </div>
                 <div class="slider_box me-3 pb-4" data-aos="zoom-in-up">
-                    <img src="./assets/images/png/machu-picchu-img.png" alt="machu-picchu-img" class="w-100">
+                    <img src="./assets/images/web.p/machu-picchu-img.webp" alt="machu-picchu-img" class="w-100">
                     <h2 class="ff-Inter fw_600 fs_24 text-black text-capitalize ps-2 mt-3">Machu Picchu, Peru</h2>
                     <p class="ff-Inter fs_14 fw_400 text_grey ps-2">Machu Picchu, Peru</p>
                     <div class="d-flex align-items-center justify-content-between">
@@ -491,7 +508,7 @@
                     </div>
                 </div>
                 <div class="slider_box me-3 pb-4" data-aos="zoom-in-up">
-                    <img src="./assets/images/png/grand-canyon.png" alt="grand-canyon" class="w-100">
+                    <img src="./assets/images/web.p/grand-canyon.webp" alt="grand-canyon" class="w-100">
                     <h2 class="ff-Inter fw_600 fs_24 text-black text-capitalize ps-2 mt-3">The Grand Canyon, Arizona
                     </h2>
                     <p class="ff-Inter fs_14 fw_400 text_grey ps-2">Mountain Hiking Tour</p>
@@ -505,7 +522,7 @@
         </div>
     </section>
     <!-- <display-grid> -->
-    <section class="bg_white pt-5 pt-4">
+    <section id="Blog" class="bg_white pt-5 pt-4">
         <div class="container">
             <div class="text-center">
                 <h2 class="fs_56 fw_600 ff-Inter" data-aos="zoom-in-up">Top Destinations</h2>
@@ -1056,17 +1073,19 @@
                         </div>
                     </div>
                 </div>
-    
+
             </div>
         </div>
     </section>
     <!-- Newsletter -->
-    <section class="bg_white pt-5 pt-4 pt-3 pb-5 pb-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+    <section class="bg_white pt-5 pt-4 pt-3 pb-5 pb-4" data-aos="fade-down" data-aos-easing="linear"
+        data-aos-duration="500">
         <div class="container background-img rounded-4 pt-5 pt-4 pb-5 pb-4">
             <div class="d-flex align-items-center justify-content-center flex-column">
                 <div>
                     <h2 class="fs_40 fw_600 ff-Inter text-center pb-2">Sign up to our newsletter</h2>
-                    <p class="fs_16 fw_400 ff-Inter text_grey text-center mw-415 m-0 pb-5">Reciev latest news, update, and many other
+                    <p class="fs_16 fw_400 ff-Inter text_grey text-center mw-415 m-0 pb-5">Reciev latest news,
+                        update, and many other
                         things
                         every week.</p>
                 </div>
@@ -1125,7 +1144,7 @@
                                 d="M16.8946 22V16.7982H18.6636L18.9284 14.576H16.8945V13.1573C16.8945 12.514 17.0597 12.0755 17.9124 12.0755L19 12.075V10.0876C18.8119 10.0605 18.1662 10 17.4152 10C15.8471 10 14.7735 11.0355 14.7735 12.9373V14.576H13V16.7982H14.7735V21.9999L16.8946 22Z"
                                 fill="#F66F4D" />
                         </svg>
-    
+
                     </a>
                     <a href="https://www.instagram.com/accounts/login/" target="_blank" class="mr_12">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1134,7 +1153,7 @@
                                 d="M12.07 10.315C12.4512 10.1667 12.8877 10.0654 13.5265 10.0363C14.1666 10.0068 14.3712 10 16.0007 10C17.6302 10 17.8347 10.0072 18.4745 10.0363C19.1128 10.0649 19.549 10.1667 19.9309 10.315C20.325 10.4682 20.6599 10.6732 20.9933 11.0071C21.3268 11.341 21.5319 11.6754 21.6855 12.07C21.8338 12.4511 21.9351 12.8875 21.9641 13.5263C21.9932 14.1661 22 14.3706 22 16C22 17.6294 21.9932 17.8335 21.9641 18.4737C21.9355 19.1124 21.8338 19.5487 21.6855 19.9301C21.5319 20.3245 21.3273 20.6595 20.9933 20.9929C20.6594 21.3263 20.325 21.5314 19.9305 21.685C19.549 21.8333 19.1128 21.9346 18.474 21.9637C17.8343 21.9932 17.6297 22 16.0003 22C14.3708 22 14.1666 21.9927 13.5265 21.9637C12.8877 21.9346 12.4519 21.8333 12.07 21.685C11.6753 21.5314 11.341 21.3262 11.0071 20.9929C10.6732 20.6597 10.4682 20.3245 10.315 19.9301C10.1667 19.5487 10.0654 19.1125 10.0363 18.4737C10.0068 17.8339 10 17.6294 10 16C10 14.3706 10.0068 14.1661 10.0363 13.5263C10.0654 12.8876 10.1667 12.4514 10.315 12.07C10.4682 11.6752 10.6732 11.3405 11.0071 11.0071C11.3411 10.6737 11.6753 10.4682 12.07 10.315ZM15.9997 14C14.8953 14 14 14.8955 14 16C14 17.1045 14.8953 18 15.9997 18C17.1043 18 18 17.1043 18 16C18 14.8957 17.1043 14 15.9997 14ZM12.6667 16C12.6667 14.1594 14.1586 12.6667 15.9997 12.6667C17.8405 12.6667 19.3333 14.1591 19.3333 16C19.3333 17.8409 17.8405 19.3333 15.9997 19.3333C14.1586 19.3333 12.6667 17.8407 12.6667 16ZM20 12.6667C20.3682 12.6667 20.6667 12.3682 20.6667 12C20.6667 11.6318 20.3682 11.3333 20 11.3333C19.6318 11.3333 19.3333 11.6318 19.3333 12C19.3333 12.3682 19.6318 12.6667 20 12.6667Z"
                                 fill="#5B5F62" />
                         </svg>
-    
+
                     </a>
                     <a href="https://twitter.com/login?lang=en" target="_blank" class="mr_12">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1150,7 +1169,8 @@
                         <div class="col-lg-3 col-sm-6 col-6">
                             <ul class="padding-left_0">
                                 <li>
-                                    <a href="" class="ff-inter fs_18 fw_500 text-black mb_15 d-inline-block">Resources</a>
+                                    <a href=""
+                                        class="ff-inter fs_18 fw_500 text-black mb_15 d-inline-block">Resources</a>
                                 </li>
                                 <li>
                                     <a href=""
@@ -1173,7 +1193,8 @@
                         <div class="col-lg-3 col-sm-6 col-6">
                             <ul class="padding-left_0">
                                 <li>
-                                    <a href="" class="ff-inter fs_18 fw_500 text-black  mb_15 d-inline-block">Travellers</a>
+                                    <a href=""
+                                        class="ff-inter fs_18 fw_500 text-black  mb_15 d-inline-block">Travellers</a>
                                 </li>
                                 <li>
                                     <a href="" class="fs_14 fw_400 ff-inter text-black opacity-75 line_height_34">Why
@@ -1189,7 +1210,8 @@
                                         Stories</a>
                                 </li>
                                 <li>
-                                    <a href="" class="fs_14 fw_400 ff-inter text-black opacity-75 line_height_34">Instagram
+                                    <a href=""
+                                        class="fs_14 fw_400 ff-inter text-black opacity-75 line_height_34">Instagram
                                         post</a>
                                 </li>
                             </ul>
@@ -1197,7 +1219,8 @@
                         <div class="col-lg-3 col-sm-6 col-6">
                             <ul class="padding-left_0">
                                 <li>
-                                    <a href="" class="ff-inter fs_18 fw_500 text-black  mb_15 d-inline-block">Company</a>
+                                    <a href=""
+                                        class="ff-inter fs_18 fw_500 text-black  mb_15 d-inline-block">Company</a>
                                 </li>
                                 <li>
                                     <a href=""
@@ -1293,23 +1316,29 @@
                         slidesToScroll: 1
                     }
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
             ]
         });
-
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({once:true,});
-    </script>
-    <script>
-        function opennav() {
+      
+             function opennav() {
             document.getElementById("navbar").classList.toggle("start-0");
             document.body.classList.toggle("overflow-hidden")
             document.getElementById("menubtn-icon").classList.toggle("cross");
         }
+        setTimeout(() => {
+            console.log("Delayed for 5 second.");
+
+            document.getElementById("preloader").classList.add("opacity-0")
+            document.getElementById("preloader").classList.add("pointer_event_none")
+
+            document.body.classList.remove("overflow-hidden")
+        }, 5000);
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, });
+    </script>
+    <script>
+   
     </script>
     <script>
         $('.myslider').slick({
