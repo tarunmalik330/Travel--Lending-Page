@@ -16,6 +16,8 @@
   --fs-8xl: 46px;
   --fs-9xl: 56px;
   --fs-10xl: 84px;
+  --fs-11xl: 19px;
+  --fs-12xl: 28px;
 
   /* color; */
   --text-orange: #f66f4d;
@@ -23,6 +25,7 @@
   --bg-color: #faf8ed;
   --text-white: #ffffff;
   --text-blue: #2e476b;
+  --card-bg: #fdfdfa;
 
   /* font-weight */
   --fw-400: 400;
@@ -72,6 +75,12 @@
 .fs_84 {
   font-size: var(--fs-10xl);
 }
+.fs_19 {
+  font-size: var(--fs-11xl);
+}
+.fs_28 {
+  font-size: var(--fs-12xl);
+}
 
 /* color */
 .text_orange {
@@ -88,6 +97,9 @@
 }
 .text_blue {
   color: var(--text-blue);
+}
+.card-bg {
+  background-color: var(--card-bg);
 }
 
 /* font-weight */
@@ -116,4 +128,45 @@
 }
 .ff-Sen {
   font-family: "sen", sans-serif;
+}
+
+@media (max-width: 576px) {
+  :root {
+    /* font-size */
+    --fs-sm: 12px;
+    --fs-md: 14px;
+    --fs-lg: 16px;
+    --fs-xl: 18px;
+    --fs-xxl: 20px;
+    --fs-3xl: 16px;
+    --fs-4xl: 24px;
+    --fs-5xl: 26px;
+    --fs-6xl: 30px;
+    --fs-7xl: 24px !important;
+    --fs-8xl: 38px;
+    --fs-9xl: 40px;
+    --fs-10xl: 63px !important;
+    --fs-11xl: 19px;
+    --fs-12xl: 20px !important;
+  }
+}
+@media (max-width: 1200px) {
+  :root {
+    /* font-size */
+    --fs-sm: 12px;
+    --fs-md: 14px;
+    --fs-lg: 16px;
+    --fs-xl: 18px;
+    --fs-xxl: 20px;
+    --fs-3xl: 16px;
+    --fs-4xl: 19px;
+    --fs-5xl: 26px;
+    --fs-6xl: 30px;
+    --fs-7xl: 40px;
+    --fs-8xl: 38px;
+    --fs-9xl: 40px;
+    --fs-10xl: 84px;
+    --fs-11xl: 19px;
+    --fs-12xl: 28px;
+  }
 }
