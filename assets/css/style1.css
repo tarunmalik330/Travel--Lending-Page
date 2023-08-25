@@ -9,21 +9,22 @@
 .z_index_3{
  z-index: 3 !important;
 }
-.button {
+.nav-btn {
     background-color: #ffffff;
     padding: 19px 34px;
     border: 2px solid #F66F4D;
     border-radius: 50px;
 }
-.button:hover{
+.nav-btn:hover{
     background: #F66F4D;
 }
-.button:hover a{
+.nav-btn:hover a{
   color: #FFF;
 }
-.button:hover span svg path{
+.nav-btn:hover span svg path{
   fill: #FFF;
 }
+
 .letter_spacing_1 {
     letter-spacing: 1%;
 }
