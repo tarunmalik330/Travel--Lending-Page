@@ -209,6 +209,12 @@
 .letter_spacing_1 {
   letter-spacing: 1%;
 }
+.mh-563{
+  max-height: 563px !important;
+}
+.mw-407{
+  max-width: 407px !important;
+}
 .mr_72 {
   margin-right: 72px;
 }
