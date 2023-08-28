@@ -64,7 +64,13 @@
     max-width: 362px;
     max-height: 252px;
 }
+.slick-slide {
+    height: inherit !important;
+    /* display: flex !important; */
+}
 .slider_box {
+    height: 100%;
+    min-height: 440px !important;
     border-radius: 16px;
     border: 2px solid #FFF;
     background: #FAF8ED;
