@@ -349,9 +349,11 @@
 }
 .footer-link:hover {
   border: 1px solid #f66f4d;
+  transition: 0.3s linear;
 }
 .footer-link:hover a svg path {
   fill: #f66f4d;
+  transition: 0.3s linear;
 }
 .myslider .slick-list::after {
   content: "";
@@ -399,10 +401,11 @@
   padding: 35px !important;
   max-height: 400px;
 }
-.pos-absolute{
-  position: absolute;
-  right: -3%;
+.top-6{
   top: -6%;
+}
+.right-3{
+  right: -3%;
 }
 /* .slick-slider.slick-current.slick-active */
 .animation {
